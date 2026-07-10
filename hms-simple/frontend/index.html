@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Hospital Management System</title>
+</head>
+<body>
+<script>
+  // Simple entry point: send logged-in users to the dashboard,
+  // everyone else to the login page.
+  if (localStorage.getItem("token")) {
+    window.location.href = "dashboard.html";
+  } else {
+    window.location.href = "login.html";
+  }
+</script>
+<noscript>
+  <p>JavaScript is required. Please open <a href="login.html">login.html</a> directly.</p>
+</noscript>
+</body>
+</html>
